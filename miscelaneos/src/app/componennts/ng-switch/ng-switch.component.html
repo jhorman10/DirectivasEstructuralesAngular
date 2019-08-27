@@ -1,0 +1,82 @@
+<span [ngSwitch]="alerta">
+  <p *ngSwitchCase="'success'">
+    Success
+  </p>
+  <p *ngSwitchCase="'primary'">
+    primary
+  </p>
+  <p *ngSwitchCase="'info'">
+    Info
+  </p>
+  <p *ngSwitchCase="'warning'">
+    warning
+  </p>
+  <p *ngSwitchCase="'danger'">
+    danger
+  </p>
+  <p *ngSwitchCase="'dark'">
+    dark
+  </p>
+  <p *ngSwitchCase="'secondary'">
+    secondary
+  </p>
+  <p *ngSwitchCase="'light'">
+    light
+  </p>
+  <p *ngSwitchDefault>
+    Default
+  </p>
+</span>
+<hr>
+<button type="button" class="btn btn-primary" (click)="alerta='primary'">
+  primary
+</button>
+<button type="button" class="btn btn-info ml-1" (click)="alerta='info'">
+  info
+</button>
+<button type="button" class="btn btn-danger ml-1" (click)="alerta='danger'">
+  danger
+</button>
+<button type="button" class="btn btn-warning ml-1" (click)="alerta='warning'">
+  warning
+</button>
+<button type="button" class="btn btn-secondary ml-1" (click)="alerta='secondary'">
+  secondary
+</button>
+<button type="button" class="btn btn-light ml-1" (click)="alerta='light'">
+  light
+</button>
+<button type="button" class="btn btn-dark ml-1" (click)="alerta='dark'">
+  dark
+</button>
+
+<br>
+<hr>
+<br>
+
+<div [ngSwitch]="alerta">
+  <div *ngSwitchCase="'primary'" class="alert alert-primary" role="alert">
+    A simple primary alert—check it out!
+  </div>
+  <div *ngSwitchCase="'secondary'" class="alert alert-secondary" role="alert">
+    A simple secondary alert—check it out!
+  </div>
+  <div *ngSwitchCase="'success'" class="alert alert-success" role="alert">
+    A simple success alert—check it out!
+  </div>
+  <div *ngSwitchCase="'danger'" class="alert alert-danger" role="alert">
+    A simple danger alert—check it out!
+  </div>
+  <div *ngSwitchCase="'warning'" class="alert alert-warning" role="alert">
+    A simple warning alert—check it out!
+  </div>
+  <div *ngSwitchCase="'info'" class="alert alert-info" role="alert">
+    A simple info alert—check it out!
+  </div>
+  <div *ngSwitchCase="'light'" class="alert alert-light" role="alert">
+    A simple light alert—check it out!
+  </div>
+  <div *ngSwitchCase="'dark'" class="alert alert-dark" role="alert">
+    A simple dark alert—check it out!
+  </div>
+</div>
