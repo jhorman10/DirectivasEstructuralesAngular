@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
       Hola mundo... esta es una etiqueta
     </p>
 
-    <button class="btn btn-primary" (click)="tamano = tamano + 5">
+    <button class="btn btn-primary mr-1" (click)="tamano = tamano + 5">
       <i class="fa fa-plus"></i>
     </button>
 
