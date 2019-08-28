@@ -4,14 +4,15 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-home',
   template: `
   <app-ng-style></app-ng-style>
-
+  <br>
   <app-css></app-css>
-
+  <br>
   <app-clases></app-clases>
-
+  <br><br>
   <p [appResaltado]="'red'" >
     Hola mundo.
   </p>
+  <br>
   <app-ng-switch></app-ng-switch>
   `,
   styles:[]
